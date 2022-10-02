@@ -27,6 +27,23 @@ public class App {
 
     //todo Task 3
     public void sumOfLiterals(){
+        int chaVar = 'Z';
+        int hexVar = 0xface;
+        String myOctal = "012";
+        int octVar = Integer.parseInt(myOctal, 8);
+        long myLong = 80L;
+        int lonVar = (int) myLong;
+        float myFloat = 44e-1f;
+        int floVar = (int) myFloat;
+        float myFloat2 = 5.5f;
+        int floVar2 = (int) myFloat2;
+        double myDouble = 8.88e1;
+        int douVar = (int) myDouble;
+        double myDouble2 = 99.9;
+        int douVar2 = (int) myDouble2;
+        int total = chaVar + hexVar + octVar + lonVar + floVar + floVar2 + douVar + douVar2;
+
+        System.out.println(total);
         // input your solution here
     }
 
