@@ -109,7 +109,7 @@ public class App {
             response = "Average Sales Revenue";
         else if (50000 <= revenue && revenue < 80000)
             response = "Good Sales Revenue";
-        else if (80000 <= revenue && revenue < 100000) //Ich hätte hier ein else-statement am Ende nehmen wollen, aber ich war aufgrund der Angabe nicht sicher, ob in der Condition die UND-/Oder-Operatoren verwendet werden sollen
+        else if (80000 <= revenue && revenue < 100000) //Um die Conditions der Angabe abzubilden wurde hier ein Else If, statt Else Statement erfasst
             response = "Excellent Sales Revenue";
 
         System.out.println(response);
@@ -146,6 +146,18 @@ public class App {
 
     //todo Task 9
     public void leapyear(){
+        Scanner yearInput = new Scanner(System.in);
+        System.out.print("Year: ");
+        int year = yearInput.nextInt();
+        yearInput.close();
+        String leapy = "";
+
+        if (year % 4 == 0 && year % 400 == 0)
+            leapy = "Leapyear";
+        else if (!(year % 4 == 0) || (year % 100 == 0 && !(year % 400 == 0))) // Else If statt Else Statement erfasst, um die Conditions der Angabe abzubilden
+            leapy = "Not a Leapyear";
+
+        System.out.println(leapy);
         // input your solution here
     }
 
