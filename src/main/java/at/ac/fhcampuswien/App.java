@@ -163,6 +163,17 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers(){
+        Scanner numberInput = new Scanner(System.in);
+        System.out.print("Number: ");
+        int number = numberInput.nextInt();
+        int num1 = (number / 100) % 10;
+        int num2 = (number / 10) % 10;
+        int num3 = number % 10;
+        numberInput.close();
+
+        System.out.print(num3);
+        System.out.print(num2);
+        System.out.println(num1);
         // input your solution here
     }
 
