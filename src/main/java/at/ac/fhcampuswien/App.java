@@ -60,6 +60,17 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
+        Scanner numberInput = new Scanner(System.in);
+        int x = numberInput.nextInt();
+        int y = numberInput.nextInt();
+        numberInput.close();
+        System.out.print("Before Swap:\nx: y: ");
+
+        x = x + y;
+        y = x - y;
+        x = x - y;
+
+        System.out.println("After Swap:\nx: " + x + "\ny: " + y);
         // input your solution here
     }
 
