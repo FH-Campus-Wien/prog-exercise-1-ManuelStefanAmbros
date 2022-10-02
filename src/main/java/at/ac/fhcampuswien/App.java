@@ -52,6 +52,7 @@ public class App {
         Scanner numberInput = new Scanner(System.in);
                 int number = numberInput.nextInt();
                 int number2 = numberInput.nextInt();
+                numberInput.close();
         System.out.println(number + number2);
 
         // input your solution here
