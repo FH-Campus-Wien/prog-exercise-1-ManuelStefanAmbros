@@ -49,6 +49,11 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
+        Scanner numberInput = new Scanner(System.in);
+                int number = numberInput.nextInt();
+                int number2 = numberInput.nextInt();
+        System.out.println(number + number2);
+
         // input your solution here
     }
 
