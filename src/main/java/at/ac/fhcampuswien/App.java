@@ -76,6 +76,20 @@ public class App {
 
     //todo Task 6
     public void compareTwoNumbers(){
+        Scanner numberInput = new Scanner(System.in);
+        int num1 = numberInput.nextInt();
+        int num2 = numberInput.nextInt();
+        numberInput.close();
+        String result;
+
+        if (num1 > num2)
+            result = "n1 > n2";
+        else if (num2 > num1)
+            result = "n2 > n1";
+        else
+            result = "n1 == n2";
+
+        System.out.println("n1: n2: " + result);
         // input your solution here
     }
 
