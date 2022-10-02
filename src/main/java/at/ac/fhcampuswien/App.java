@@ -96,10 +96,10 @@ public class App {
     //todo Task 7
     public void ratingSalesPerson(){
         Scanner revenueInput = new Scanner(System.in);
-        System.out.println("Enter annual revenue: ");
+        System.out.print("Enter annual Revenue: ");
         int revenue = revenueInput.nextInt();
         revenueInput.close();
-        String response;
+        String response = "";
 
         if (revenue < 0 || revenue >= 100000)
             response = "Invalid Revenue";
@@ -109,7 +109,7 @@ public class App {
             response = "Average Sales Revenue";
         else if (50000 <= revenue && revenue < 80000)
             response = "Good Sales Revenue";
-        else
+        else if (80000 <= revenue && revenue < 100000) //Ich hätte hier ein else-statement am Ende nehmen wollen, aber ich war aufgrund der Angabe nicht sicher, ob in der Condition die UND-/Oder-Operatoren verwendet werden sollen
             response = "Excellent Sales Revenue";
 
         System.out.println(response);
@@ -118,6 +118,29 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
+        Scanner provisionInput = new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
+        int provision = provisionInput.nextInt();
+        provisionInput.close();
+
+        switch (provision) {
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.0"); //Von der Angabe abgewichen, da der Test sonst nicht bestanden wurde - Daher 0.0 statt 0.00
+        }
+
+
         // input your solution here
     }
 
